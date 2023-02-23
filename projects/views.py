@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 #HTTP request -> response
 def projects(request):
-    return HttpResponse('Here are our products')
+    return render(request, 'projects/projects.html')
 
 def project(request, pk):
-    return HttpResponse('SINGLE PROJECT' + ' ' + str(pk))
+    return render(request, 'projects/single-project.html')
