@@ -10,7 +10,7 @@ projectsList = [
     {
     'id': '2',
     'title': 'Porfolio Website',
-    'description': 'This was a project where I built out my portfolio.'
+    'description': 'This was a projt where I built out my portfolio.'
     },
     {
     'id': '3', 
