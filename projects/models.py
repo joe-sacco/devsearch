@@ -10,3 +10,6 @@ class Project(models.Model):
     source_link = models.CharField(max_length=2000, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True) #auto generate timestamp
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False) # must be unique
+
+    def __str__(self):
+        return self.title
